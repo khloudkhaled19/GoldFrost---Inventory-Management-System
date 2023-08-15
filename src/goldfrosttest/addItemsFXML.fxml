@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldfrosttest.AddItemsFXMLController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="788.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="788.0" spacing="50.0">
+               <children>
+                  <Label text="اسم البضاعة">
+                     <graphic>
+                        <TextField fx:id="itemField" />
+                     </graphic>
+                  </Label>
+                  <Label text="اسم العميل">
+                     <graphic>
+                        <TextField fx:id="clientNameField" onInputMethodTextChanged="#clientNameAction" onMouseDragReleased="#clientNameAction" />
+                     </graphic>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="788.0" spacing="50.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label text="الوارد">
+                     <graphic>
+                        <TextField fx:id="incomeField" />
+                     </graphic>
+                  </Label>
+                  <Label text="اذن الوارد">
+                     <graphic>
+                        <TextField fx:id="incomeCodeField" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="788.0" spacing="50.0">
+               <children>
+                  <Label text="السعر">
+                     <graphic>
+                        <TextField fx:id="priceField" />
+                     </graphic>
+                  </Label>
+                  <Label text="الصادر">
+                     <graphic>
+                        <TextField fx:id="outcomeField" />
+                     </graphic>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="294.0" prefHeight="100.0" prefWidth="788.0" spacing="50.0">
+               <children>
+                  <Label text="التداول">
+                     <graphic>
+                        <TextField fx:id="carriage" />
+                     </graphic>
+                  </Label>
+                  <Label text="الكمية">
+                     <graphic>
+                        <TextField fx:id="creditField" />
+                     </graphic>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="100.0" prefWidth="788.0" spacing="10.0">
+               <children>
+                  <Label text="السنة">
+                     <graphic>
+                        <TextField fx:id="yearField" />
+                     </graphic>
+                  </Label>
+                  <Label layoutX="291.0" layoutY="16.0" text="الشهر">
+                     <graphic>
+                        <TextField fx:id="monthField" />
+                     </graphic>
+                  </Label>
+                  <Label layoutX="404.0" layoutY="16.0" text="اليوم">
+                     <graphic>
+                        <TextField fx:id="dayField" />
+                     </graphic>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="208.0" prefHeight="53.0" prefWidth="788.0">
+               <children>
+                  <JFXButton fx:id="additembtn" onAction="#additembtnAction" styleClass="btn-login" stylesheets="@../goldfrosttest/loginfxml.css" text="اضف البضاعة" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldfrosttest.LoginFXMLController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #4682B4;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/1504264.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="جولد فروست" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="57.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="signupbtn" onAction="#signupAction" prefHeight="50.0" prefWidth="192.0" styleClass="btn-login" stylesheets="@registrationfxml.css" text="انشاء حساب">
+                     <VBox.margin>
+                        <Insets top="35.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: #FFFFFF;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="تسجيل الدخول الى جولد فورست" textFill="STEELBLUE">
+                           <font>
+                              <Font name="Algerian" size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="usernameField" alignment="CENTER_RIGHT" focusColor="STEELBLUE" labelFloat="true" prefHeight="58.0" prefWidth="341.0" promptText="اسم المستخدم">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXPasswordField fx:id="passwordField" alignment="CENTER_RIGHT" focusColor="STEELBLUE" labelFloat="true" prefHeight="60.0" prefWidth="342.0" promptText="كلمة المرور">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXPasswordField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="loginbtn" onAction="#loginAction" prefHeight="54.0" prefWidth="377.0" styleClass="btn-login" stylesheets="@loginfxml.css" text="دخول" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

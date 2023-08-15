@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" fx:id="homePane" prefHeight="845.0" prefWidth="788.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldfrosttest.AccountantHomeFXMLController">
+   <children>
+      <HBox alignment="CENTER" layoutX="237.0" layoutY="101.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="clientsbtn" alignment="CENTER" onAction="#clientsbtn" prefHeight="168.0" prefWidth="290.0" styleClass="btn-login" stylesheets="@loginfxml.css" text="العملاء" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/community.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="238.0" layoutY="345.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="productsbtn" onAction="#productsbtnAction" prefHeight="168.0" prefWidth="290.0" styleClass="btn-login" stylesheets="@loginfxml.css" text="البضائع" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/boxes.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="237.0" layoutY="587.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="invoicebtn" onAction="#invoicebtnAction" prefHeight="168.0" prefWidth="290.0" styleClass="btn-login" stylesheets="@loginfxml.css" text="الفاتورة" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/invoice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

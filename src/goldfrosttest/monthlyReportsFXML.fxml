@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldfrosttest.MonthlyReportsFXMLController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="788.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="788.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton fx:id="showbtn" onAction="#showbtnAction" styleClass="btn-login" stylesheets="@loginfxml.css" text="اعرض التقرير">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXButton>
+                  <Label text="السنة">
+                     <graphic>
+                        <TextField fx:id="yearField" alignment="CENTER" promptText="YYYY" />
+                     </graphic>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="الشهر">
+                     <graphic>
+                        <TextField fx:id="monthField" alignment="CENTER" promptText="MM" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="508.0" prefWidth="788.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="table" nodeOrientation="RIGHT_TO_LEFT" prefHeight="508.0" prefWidth="788.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="clientName" prefWidth="171.0" text="اسم العميل" />
+                      <TableColumn fx:id="itemName" prefWidth="181.0" text="اسم البضاعة" />
+                        <TableColumn fx:id="date" minWidth="0.0" prefWidth="234.0" text="التاريخ" />
+                        <TableColumn fx:id="credit" prefWidth="98.0" text="الكمية" />
+                        <TableColumn fx:id="price" prefWidth="103.0" text="السعر" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldfrosttest.RegistrationFXMLController">
+   <children>
+      <HBox fx:id="HBox1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="VBoxLeft" alignment="CENTER" prefHeight="200.0" prefWidth="250.0" spacing="5.0" style="-fx-background-color: #4682B4;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/1504264.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="WelcomeLabel" text="مرحبا بك" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ToLabel" text="فى" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="GFLabel" layoutX="143.0" layoutY="251.0" text="جولد فورست" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="SignInBtn" onAction="#signinAction" styleClass="btn-login" stylesheets="@registrationfxml.css" text="لديك حساب !" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="55.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="VBoxRight" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF;" HBox.hgrow="ALWAYS">
+               <children>
+      
+                  
+                  <HBox fx:id="HBox2" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                     <children>
+                        <JFXTextField fx:id="lastName" alignment="CENTER_RIGHT" focusColor="STEELBLUE" labelFloat="true" prefHeight="44.0" prefWidth="260.0" promptText="الاسم التانى">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="firstName" alignment="CENTER_RIGHT" focusColor="STEELBLUE" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="44.0" prefWidth="260.0" promptText="الاسم الاول">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="HBox3" alignment="CENTER" layoutX="20.0" layoutY="140.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                     <children>
+                        <JFXTextField fx:id="email" alignment="CENTER_RIGHT" focusColor="STEELBLUE" labelFloat="true" prefHeight="44.0" prefWidth="260.0" promptText="البريد الالكترونى">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="phone" alignment="CENTER_RIGHT" focusColor="STEELBLUE" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="44.0" prefWidth="260.0" promptText="رقم التليفون">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="HBox4" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                     <children>
+                        <JFXPasswordField fx:id="confpassword" alignment="CENTER_RIGHT" labelFloat="true" prefHeight="44.0" prefWidth="260.0" promptText="تأكيد كلمة المرور">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXPasswordField fx:id="password" alignment="CENTER_RIGHT" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="44.0" prefWidth="260.0" promptText="كلمة المرور">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXPasswordField>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="HBox5" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <JFXComboBox fx:id="jobTitle" focusColor="STEELBLUE" labelFloat="true" prefHeight="44.0" prefWidth="260.0" promptText="المسمى الوظيفى">
+                           <HBox.margin>
+                              <Insets left="290.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </JFXComboBox>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="HBox6" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="Registerbtn" alignment="CENTER" buttonType="RAISED" onAction="#regAction" prefHeight="39.0" prefWidth="520.0" styleClass="btn-login" stylesheets="@loginfxml.css" text="انشاء الحساب" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

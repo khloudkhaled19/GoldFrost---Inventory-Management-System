@@ -1,0 +1,40 @@
+.btn-login{
+    -fx-background-color: #FFF;
+    -fx-font-family:Tahoma;
+    -fx-font-size:20px;
+    -fx-text-fill: #4682B4;
+    -fx-background-radius: 20px
+
+}
+
+.btn-login:hover{
+    -fx-cursor: hand;
+    -fx-border-color: #FFF;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: #4682B4;
+    -fx-font-weight: bold 
+
+
+}
+.btn-reg{
+    -fx-background-color: #4682B4;
+    -fx-font-family:Tahoma;
+    -fx-font-size:20px;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 20px
+
+}
+
+.btn-reg:hover{
+    -fx-cursor: hand;
+    -fx-border-color: #4682B4;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: #4682B4;
+    -fx-font-weight: bold 
+
+
+}

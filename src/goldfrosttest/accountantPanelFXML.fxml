@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldfrosttest.AccountantPanelFXMLController">
+   <children>
+      <BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="1046.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <VBox prefHeight="845.0" prefWidth="258.0" style="-fx-background-color: #4682B4;">
+               <children>
+                  <Pane prefHeight="161.0" prefWidth="258.0" styleClass="bodybg" stylesheets="@panelfxml.css" />
+                  <JFXButton fx:id="homebtn" contentDisplay="RIGHT" onAction="#homebtnAction" prefHeight="73.0" prefWidth="261.0" text="الصفحة الرئيسية" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_home_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="itemsbtn" contentDisplay="RIGHT" layoutX="10.0" layoutY="171.0" onAction="#itemsbtnAction" prefHeight="73.0" prefWidth="261.0" text="البضائع" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/product-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="invoicebtn" contentDisplay="RIGHT" layoutX="10.0" layoutY="244.0" onAction="#invoicebtnAction" prefHeight="73.0" prefWidth="261.0" text="الفاتورة" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/credit-card-6-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="clientsbtn" contentDisplay="RIGHT" layoutX="10.0" layoutY="317.0" onAction="#clientsbtnAction" prefHeight="73.0" prefWidth="261.0" text="العملاء" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_supervisor_account_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="107.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="settingsbtn" contentDisplay="RIGHT" layoutX="10.0" layoutY="390.0" onAction="#settingsbtnAction" prefHeight="73.0" prefWidth="261.0" text="الاعدادات" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_settings_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="logoutbtn" contentDisplay="RIGHT" layoutX="10.0" layoutY="463.0" onAction="#logoutbtnAction" prefHeight="73.0" prefWidth="261.0" text="الخروج" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_meeting_room_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="106.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

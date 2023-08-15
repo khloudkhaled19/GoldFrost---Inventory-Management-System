@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldfrosttest.AdminPanelFXMLController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="845.0" prefWidth="1046.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <VBox prefHeight="845.0" prefWidth="258.0" style="-fx-background-color: #4682B4;" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <Pane prefHeight="161.0" prefWidth="258.0" styleClass="bodybg" stylesheets="@panelfxml.css">
+                     <children>
+                        <Label layoutX="165.0" layoutY="120.0" text="مرحبا بك " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="65.0" fitWidth="56.0" layoutX="101.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_admin_panel_settings_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <JFXButton fx:id="adminHome" alignment="BASELINE_LEFT" contentDisplay="RIGHT" onAction="#adminHomeAction" prefHeight="73.0" prefWidth="261.0" text="الصفحة الرئيسية" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_home_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="adminEmployees" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" onAction="#adminEmployeesAction" prefHeight="73.0" prefWidth="261.0" text="الموظفون" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="101.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_supervisor_account_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="adminReports" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="83.0" onAction="#adminReportsAction" prefHeight="73.0" prefWidth="261.0" text="التقارير" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="130.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_description_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="adminIncome" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="156.0" onAction="#adminIncomeAction" prefHeight="73.0" prefWidth="261.0" text="الوارد" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="148.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_local_shipping_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="adminOutcome" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="229.0" onAction="#adminOutcomeAction" prefHeight="73.0" prefWidth="261.0" text="الصادر" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="138.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_store_mall_directory_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="adminSettings" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="302.0" onAction="#adminSettingsAction" prefHeight="73.0" prefWidth="261.0" stylesheets="@panelfxml.css" text="الأعدادات" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="109.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_settings_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="logout" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="536.0" onAction="#logoutAction" prefHeight="73.0" prefWidth="261.0" stylesheets="@panelfxml.css" text="خروج" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="150.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_meeting_room_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
